@@ -1,0 +1,5 @@
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data\bin\Release\GestioneCopie.Data.dll.config
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data\bin\Release\GestioneCopie.Data.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data\bin\Release\GestioneCopie.Data.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data\obj\Release\GestioneCopie.Data.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data\obj\Release\GestioneCopie.Data.pdb

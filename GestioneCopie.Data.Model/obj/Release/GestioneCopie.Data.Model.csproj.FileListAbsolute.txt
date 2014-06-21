@@ -1,0 +1,4 @@
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data.Model\bin\Release\GestioneCopie.Data.Model.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data.Model\bin\Release\GestioneCopie.Data.Model.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data.Model\obj\Release\GestioneCopie.Data.Model.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Data.Model\obj\Release\GestioneCopie.Data.Model.pdb

@@ -1,0 +1,5 @@
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\bin\Debug\GestioneCopie.Common.Infrastructures.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\bin\Debug\GestioneCopie.Common.Infrastructures.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\obj\Debug\GestioneCopie.Common.Infrastructures.csprojResolveAssemblyReference.cache
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\obj\Debug\GestioneCopie.Common.Infrastructures.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\obj\Debug\GestioneCopie.Common.Infrastructures.pdb

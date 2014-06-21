@@ -1,0 +1,4 @@
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\bin\Release\GestioneCopie.Common.Infrastructures.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\bin\Release\GestioneCopie.Common.Infrastructures.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\obj\Release\GestioneCopie.Common.Infrastructures.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.Infrastructures\obj\Release\GestioneCopie.Common.Infrastructures.pdb

@@ -1,0 +1,14 @@
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\bin\Release\GestioneCopie.Common.CustomControl.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\bin\Release\GestioneCopie.Common.CustomControl.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\bin\Release\FirstFloor.ModernUI.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\bin\Release\FirstFloor.ModernUI.xml
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl.csprojResolveAssemblyReference.cache
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl_MarkupCompile.cache
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl_MarkupCompile.lref
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\Themes\Generic.baml
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl.g.resources
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl.Properties.Resources.resources
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl.csproj.GenerateResource.Cache
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Common.CustomControl\obj\Release\GestioneCopie.Common.CustomControl.pdb

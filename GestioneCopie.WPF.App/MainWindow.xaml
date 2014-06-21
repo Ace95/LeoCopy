@@ -1,0 +1,24 @@
+﻿<mui:ModernWindow x:Class="GestioneCopie.WPF.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Liceo Scientifico Leonardo - Gestione Copie" IsTitleVisible="True"
+        LogoData="M36.939998,35.459999C41.346191,35.459999 44.918999,39.030445 44.918999,43.439301 44.918999,46.46867 43.230289,49.102894 40.743046,50.453445L40.555,50.549717 40.555,60.339996 36.828194,55.721535 33.328003,60.339996 33.328003,50.551231 33.136997,50.453445C30.649759,49.102894 28.961,46.46867 28.961,43.439301 28.961,39.030445 32.533913,35.459999 36.939998,35.459999z M8.2270001,29.166L42.765999,29.166 42.765999,31.832001 8.2270001,31.832001z M8.2270001,22.997L42.765999,22.997 42.765999,25.663 8.2270001,25.663z M8.2270001,15.439L30.315,15.439 30.315,18.106001 8.2270001,18.106001z M13.062,9.0509996L30.315,9.0509996 30.315,11.718 13.062,11.718z M4.8620003,5.1470013L4.8620003,62.978001 47.098999,62.978001 47.098999,18.101999 33.715999,18.101999 33.715999,5.1470013z M0,0L33.715999,0 36.465763,0 51.958,15.168064 51.958,68.124001 0,68.124001z"
+        Icon="leocopy.ico"
+        ContentSource="/Pages/Home.xaml" >
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="LeoCopy Main Menu">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Home" Source="/Pages/Home.xaml" />
+                <mui:Link DisplayName="Start" Source="/Pages/Start.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="settings" Source="/Pages/Settings.xaml" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

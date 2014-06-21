@@ -1,0 +1,11 @@
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\GestioneCopie.Business.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\GestioneCopie.Business.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\GestioneCopie.Data.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\GestioneCopie.Data.Model.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\itextsharp.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\GestioneCopie.Data.Model.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\GestioneCopie.Data.pdb
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\bin\Release\itextsharp.xml
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\obj\Release\GestioneCopie.Business.csprojResolveAssemblyReference.cache
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\obj\Release\GestioneCopie.Business.dll
+C:\Sviluppo\Leonardo.GestioneCopie\GestioneCopie.Business\obj\Release\GestioneCopie.Business.pdb

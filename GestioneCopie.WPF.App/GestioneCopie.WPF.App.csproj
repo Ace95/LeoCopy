@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1C82741-15EB-4EB5-A885-B00703B08823}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestioneCopie.WPF.App</RootNamespace>
+    <AssemblyName>GestioneCopie.WPF.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>leocopy.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirstFloor.ModernUI">
+      <HintPath>..\packages\ModernUI.WPF.1.0.5\lib\net45\FirstFloor.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Controls.Grids.XamGrid.v12.1, Version=12.1.20121.2314, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.Controls.Menus.XamMenu.v12.1, Version=12.1.20121.2314, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.DataManager.v12.1, Version=12.1.20121.2314, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.Editors.v12.1, Version=12.1.20121.2314, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.v12.1, Version=12.1.20121.2314, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentViewModels\ClassiViewModel.cs" />
+    <Compile Include="ContentViewModels\FotocopieViewModel.cs" />
+    <Compile Include="ContentViewModels\StartContentViewModel.cs" />
+    <Compile Include="ContentViewModels\SezioniViewModel.cs" />
+    <Compile Include="Content\Fotocopie.xaml.cs">
+      <DependentUpon>Fotocopie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\StartContent.xaml.cs">
+      <DependentUpon>StartContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Sezioni.xaml.cs">
+      <DependentUpon>Sezioni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Classi.xaml.cs">
+      <DependentUpon>Classi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FotocopieLabel.Designer.cs">
+      <DependentUpon>FotocopieLabel.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\GestioneCopieStrings.cs" />
+    <Compile Include="Resources\SezioniLabel.Designer.cs">
+      <DependentUpon>SezioniLabel.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ClassiLabel.Designer.cs">
+      <DependentUpon>ClassiLabel.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\DocentiLabel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocentiLabel.resx</DependentUpon>
+    </Compile>
+    <Page Include="Content\Fotocopie.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\StartContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Sezioni.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Classi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Docenti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\HomeContentMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="ContentViewModels\AboutViewModel.cs" />
+    <Compile Include="ContentViewModels\DocentiViewModel.cs" />
+    <Compile Include="Content\Docenti.xaml.cs">
+      <DependentUpon>Docenti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\HomeContentMenu.xaml.cs">
+      <DependentUpon>HomeContentMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViewModels\HomeContentMenuViewModel.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Content\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Content\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Content\SettingsAppearance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Content\SettingsAppearance.xaml.cs">
+      <DependentUpon>SettingsAppearance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViewModels\SettingsAppearanceViewModel.cs" />
+    <Page Include="Pages\Start.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="folder_docs_alt.ico" />
+    <Resource Include="leocopy.ico" />
+    <Resource Include="Images\Uomo-vitruvianoDX.jpg" />
+    <Resource Include="Images\docenti.jpg" />
+    <Resource Include="Images\folder_docs_alt.ico" />
+    <Resource Include="Images\fotocopiatrice.jpg" />
+    <Resource Include="Images\lamortenera.jpg" />
+    <Resource Include="Images\leonardo1.jpg" />
+    <Resource Include="Images\pericolo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GestioneCopie.Business\GestioneCopie.Business.csproj">
+      <Project>{63211ea5-af09-45fa-be99-82314c5de91e}</Project>
+      <Name>GestioneCopie.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GestioneCopie.Common.Infrastructures\GestioneCopie.Common.Infrastructures.csproj">
+      <Project>{f47de66d-d958-4a15-928b-d738a8abcce4}</Project>
+      <Name>GestioneCopie.Common.Infrastructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GestioneCopie.Common.Resources\GestioneCopie.Common.Resources.csproj">
+      <Project>{1f554b1d-c114-4d05-91c5-a9b40a7433a5}</Project>
+      <Name>GestioneCopie.Common.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GestioneCopie.Common.UI\GestioneCopie.Common.UI.csproj">
+      <Project>{a617fa77-bdfb-44fc-b496-b7b492fe7074}</Project>
+      <Name>GestioneCopie.Common.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GestioneCopie.Data.Model\GestioneCopie.Data.Model.csproj">
+      <Project>{43a4e13e-27ce-40c0-96f1-7fc2d00ac5f1}</Project>
+      <Name>GestioneCopie.Data.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FotocopieLabel.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>FotocopieLabel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SezioniLabel.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SezioniLabel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ClassiLabel.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClassiLabel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DocentiLabel.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DocentiLabel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

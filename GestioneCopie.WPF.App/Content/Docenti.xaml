@@ -1,0 +1,136 @@
+﻿<UserControl xmlns:ig="http://schemas.infragistics.com/xaml"  x:Class="GestioneCopie.WPF.App.Content.Docenti"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:resources="clr-namespace:GestioneCopie.WPF.App.Resources"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:behaviors="clr-namespace:GestioneCopie.Common.Resources.Behaviors;assembly=GestioneCopie.Common.Resources"
+             xmlns:appUI="clr-namespace:GestioneCopie.Common.UI.Toolbars;assembly=GestioneCopie.Common.UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GestioneCopie.Common.Resources;component/Theme/Brushes.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/GestioneCopie.Common.Resources;component/Theme/Numbers.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/GestioneCopie.Common.Resources;component/Theme/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.Resources>
+            <resources:DocentiLabel x:Key="DocentiLabel" />
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ig:XamGrid Grid.Column="0" Grid.Row="0" x:Name="GridDocenti"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch"
+                    AutoGenerateColumns="False"
+                    ItemsSource="{Binding ElencoDocenti}"
+                    ActiveItem="{Binding SelectedDocente}"
+                    ColumnWidth="*">
+            <i:Interaction.Behaviors>
+                <behaviors:XamGridSelectedItemsBehavior SelectedItems="{Binding SelectedRisorsa}" />
+            </i:Interaction.Behaviors>
+            <ig:XamGrid.SelectionSettings>
+                <ig:SelectionSettings CellClickAction="SelectRow" RowSelection="Multiple" />
+            </ig:XamGrid.SelectionSettings>
+            <ig:XamGrid.Columns>
+                <ig:TextColumn Key="IdDocente" HeaderText="#" Visibility="Collapsed"/>
+                <ig:TextColumn Key="Cognome" HeaderText="Cognome"/>
+                <ig:TextColumn Key="Nome" HeaderText="Nome"/>
+            </ig:XamGrid.Columns>
+            <ig:XamGrid.FilteringSettings>
+                <ig:FilteringSettings AllowFiltering="FilterRowTop" 
+                                      FilteringScope="ChildBand" />
+            </ig:XamGrid.FilteringSettings>
+        </ig:XamGrid>
+        
+        <Grid Grid.Column="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{DynamicResource RowHeight}" />
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Background="{DynamicResource MetroBackgroundBrush}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="{DynamicResource RowHeight}" />
+                    </Grid.RowDefinitions>
+
+                    <appUI:DocentiToolbar x:Name="DocentiToolbar" />
+                </Grid>
+
+                <Grid Grid.Row="1" DataContext="{Binding SelectedDocente}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="{DynamicResource RowHeight}" />
+                        <RowDefinition Height="{DynamicResource RowHeight}" />
+                        <RowDefinition Height="{DynamicResource RowHeight}" />
+                        <RowDefinition Height="{DynamicResource RowHeight}" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="1" Grid.Column="0" Style="{DynamicResource RightAlignedLabel}" Content="{Binding Nome, Source={StaticResource DocentiLabel}}" />
+                    <Label Grid.Row="2" Grid.Column="0" Style="{DynamicResource RightAlignedLabel}" Content="{Binding Cognome, Source={StaticResource DocentiLabel}}" />
+                    <Label Grid.Row="3" Grid.Column="0" Style="{DynamicResource RightAlignedLabel}" Content="{Binding TotaleFotocopie, Source={StaticResource DocentiLabel}}" />
+
+                    <TextBox Grid.Row="1" Grid.Column="1"
+                             Style="{DynamicResource DetailTextBox}" 
+                             Width="300"
+                             MaxLength="50"
+                             Text="{Binding Nome, Mode=TwoWay}" />
+                    <TextBox Grid.Row="2" Grid.Column="1"
+                             Style="{DynamicResource DetailTextBox}" 
+                             Width="300"
+                             MaxLength="50"
+                             Text="{Binding Cognome, Mode=TwoWay}" />
+                    <TextBox Grid.Row="3" Grid.Column="1" 
+                             Style="{DynamicResource DetailTextBox}" 
+                             IsEnabled="False"
+                             Background="Yellow"
+                             Width="80"
+                             Text="{Binding TotaleDocente, Mode=TwoWay}" />
+                    <TextBox Grid.Row="3" Grid.Column="1" 
+                             Margin="120, 0, 0, 0"
+                             Style="{DynamicResource DetailTextBox}" 
+                             IsEnabled="False"
+                             Background="Yellow"
+                             Width="80"
+                             Text="{Binding TotaleFotocopie, Mode=TwoWay}" />
+                </Grid>
+
+                <ig:XamGrid Grid.Row="2" x:Name="GridFotocopieDocente"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch"
+                    AutoGenerateColumns="False"
+                    ItemsSource="{Binding FotocopieDocente}"
+                    ColumnWidth="*">
+                    <ig:XamGrid.SelectionSettings>
+                        <ig:SelectionSettings CellClickAction="SelectRow" RowSelection="Multiple" />
+                    </ig:XamGrid.SelectionSettings>
+                    <ig:XamGrid.Columns>
+                        <ig:TextColumn Key="IdClasse" HeaderText="Classe" />
+                        <ig:TextColumn Key="Sezione" HeaderText="Sezione"/>
+                        <ig:TextColumn Key="DataFotocopie" HeaderText="Data" FormatString="{}{0: dd/MM/yyyy}"/>
+                        <ig:TextColumn Key="NumeroFotocopie" HeaderText="Numero"/>
+                    </ig:XamGrid.Columns>
+                    <ig:XamGrid.FilteringSettings>
+                        <ig:FilteringSettings AllowFiltering="FilterRowTop" 
+                                      FilteringScope="ChildBand" />
+                    </ig:XamGrid.FilteringSettings>
+                </ig:XamGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
